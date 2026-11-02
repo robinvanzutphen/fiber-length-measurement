@@ -84,6 +84,14 @@ packaging/             PyInstaller spec, icon, INSTALL.txt
 tests/                 pytest
 ```
 
+## License
+
+FLS is released under the [MIT license](LICENSE). The Windows executable bundles third-party
+packages, among which PyQt5 (GPL v3); the executable as a whole is therefore distributed under
+the GPL v3, with the complete source included and all licenses listed in
+`THIRD_PARTY_LICENSES.txt`. Moku software, instrument files, VISA libraries and Omicron software
+are not included and are subject to their vendors' terms.
+
 ## Contact
 
 Robin van Zutphen — Amsterdam UMC, Biomedical Engineering and Physics.

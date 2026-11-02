@@ -36,6 +36,8 @@ echo Copying source code and documentation ...
 robocopy . dist\FLS\source /E /NFL /NDL /NJH /NJS /XD .build-venv build dist .git __pycache__ .pytest_cache >nul
 if errorlevel 8 goto :error
 copy /y packaging\INSTALL.txt dist\FLS\INSTALL.txt >nul
+copy /y LICENSE dist\FLS\LICENSE.txt >nul
+%VPY% packaging\collect_licenses.py dist\FLS\THIRD_PARTY_LICENSES.txt || goto :error
 
 echo Creating zip ...
 if exist "dist\FLS_V2_%VERSION%.zip" del "dist\FLS_V2_%VERSION%.zip"
