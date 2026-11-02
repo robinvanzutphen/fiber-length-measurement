@@ -1,0 +1,29 @@
+[project]
+name = "fls"
+version = "2.0.0"
+description = "Fiber length measurement with a swept-frequency PLL phasemeter"
+requires-python = ">=3.11"
+dependencies = ["moku>=4.4,<5", "pyvisa>=1.13", "PyQt5>=5.15", "pyqtgraph>=0.13",
+                "numpy>=1.24", "pandas>=2.0"]
+
+[project.optional-dependencies]
+test = ["pytest>=7"]
+
+[project.scripts]
+fls = "fls.app:main"
+
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["fls*"]
+
+[tool.setuptools.package-data]
+"fls.ui" = ["assets/*.svg", "assets/*.png"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100

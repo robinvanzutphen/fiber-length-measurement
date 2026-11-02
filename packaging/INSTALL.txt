@@ -1,0 +1,25 @@
+FLS V2 - Fiber Length Measurement
+=================================
+
+Start:  FLS.exe            (training without instruments:  FLS.exe --simulate)
+
+Before the first start, install these yourself (they cannot be included):
+
+  1. Moku desktop app (contains the Moku USB driver)
+       https://liquidinstruments.com/software/
+  2. Moku CLI (mokucli, version 4.4 or newer)
+       https://liquidinstruments.com/software/utilities/
+  3. A VISA library for the waveform generator, ONE of:
+       NI-VISA   https://www.ni.com/en/support/downloads/drivers/download.ni-visa.html
+       R&S VISA  https://www.rohde-schwarz.com/applications/r-s-visa-application-note_56280-148812.html
+  4. Omicron Control Center (laser software, supplied with the laser / www.omicron-laser.de)
+
+First start:
+  FLS opens the System check. Switch on the Moku and the waveform generator (USB),
+  press "Find instruments...", select both, and press "Download instrument files"
+  if that line is red. All lines should become green; every red line says how to fix it.
+
+Full guide:  Help button in FLS, or docs\USER_GUIDE.md
+Source code: source\   (see source\README.md)
+Logs:        %APPDATA%\FLS\logs\
+Paper:       https://doi.org/10.1364/OL.546043

@@ -1,0 +1,28 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the article below."
+title: "FLS - Fiber Length Measurement software (V2)"
+version: 2.0.0
+type: software
+authors:
+  - family-names: van Zutphen
+    given-names: Robin
+    affiliation: "Amsterdam UMC, Department of Biomedical Engineering and Physics"
+preferred-citation:
+  type: article
+  title: "Simple and cost-effective method to measure the length of optical fibers"
+  authors:
+    - family-names: van Zutphen
+      given-names: Robin
+    - family-names: Bloemen
+      given-names: Paul R.
+    - family-names: van Leeuwen
+      given-names: Ton G.
+    - family-names: Attendu
+      given-names: Xavier
+  journal: "Optics Letters"
+  volume: 50
+  issue: 2
+  start: 329
+  end: 332
+  year: 2025
+  doi: "10.1364/OL.546043"
